@@ -1,4 +1,4 @@
-# ASUS-FL8000UQ-Hackintosh For MacOS Catalina
+# ASUS-FL8000UQ-Hackintosh For MacOS Mojave/Catalina
 
 ## 配置：
 
