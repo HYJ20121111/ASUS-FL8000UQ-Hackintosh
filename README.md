@@ -33,3 +33,6 @@
 ## 感谢[黑果小兵的部落阁](https://blog.daliansky.net/)镜像及文章的帮助
 ## 感谢[acidanthera](https://github.com/acidanthera/AppleALC)的AppleALC源码
 ## 感谢[xzhih](https://github.com/xzhih/one-key-hidpi)的一键开启HIDPI
+
+## 截图
+https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/1.png
