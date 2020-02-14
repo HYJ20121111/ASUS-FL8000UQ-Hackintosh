@@ -16,12 +16,14 @@
 1. CPU变频
 2. 核显硬件加速，独显无法驱动已做屏蔽
 3. 声卡输出（自编译AppleALC驱动）
-4. HDMI输出
+4. HDMI输出(半完美）
 5. USB
 6. WIFI/蓝牙(已更换BCM94360CD,原装AR9565可驱动,有需要可去远景论坛查找）
 7. 电量显示正常
 8. 触控板
 9. 睡眠和唤醒
+## HDMI注意事项
+此电脑在BIOS中打开CSM兼容选项就可以在外接显示器中显示BIOS和Clover界面以及开机过程，但如果用外接显示器开机，那么黑苹果内屏将无法使用，但是10.14 Mojave中在clover里加上“igfxcflbklt=1”启动参数，开机后将笔记本盖子合上再打开即可同时使用内外屏。但此方法在10.15 Catalina中无效，所以建议10.15Catalina不要打开CSM兼容模式，用内屏来开机，等黑苹果完全启动即可使用外屏。
 
 ## 一键开启HIDPI项目地址：[one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
 
