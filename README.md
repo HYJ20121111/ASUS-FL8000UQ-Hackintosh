@@ -28,4 +28,5 @@
 2.安装完成后请重新定制USB以解决睡眠问题：[USB定制教程](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)  
 3。不要使用Fn+F1进行睡眠，否则将无法唤醒，只能重启。
 
-## 感谢[黑果小兵的部落阁](https://blog.daliansky.net/)镜像及文章的帮助   感谢[acidanthera](https://github.com/acidanthera/AppleALC)的AppleALC源码
+## 感谢[黑果小兵的部落阁](https://blog.daliansky.net/)镜像及文章的帮助
+## 感谢[acidanthera](https://github.com/acidanthera/AppleALC)的AppleALC源码
