@@ -35,4 +35,4 @@
 ## 感谢[xzhih](https://github.com/xzhih/one-key-hidpi)的一键开启HIDPI
 
 ## 截图
-https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/1.png
+![image](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/1.png)
