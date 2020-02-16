@@ -21,7 +21,7 @@
 				<key>FixRegions</key>
 				<true/>
 				<key>FixWAK</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
