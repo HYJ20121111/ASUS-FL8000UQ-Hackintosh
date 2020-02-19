@@ -32,6 +32,8 @@
 ## 关于睡眠过程中电脑自动唤醒解决方案（注：可能导致关机变重启）
 当电脑出现自动唤醒后，打开终端输入 log show --last 1d | grep "Wake reason" 找到唤醒电脑的设备，然后在DSDT中搜索对应的设备，将设备下面的_PRW方法注释掉即可。
 
+## 有问题可加QQ交流：211560569。
+
 ## 感谢[黑果小兵的部落阁](https://blog.daliansky.net/)镜像及文章的帮助
 ## 感谢[acidanthera](https://github.com/acidanthera/AppleALC)的AppleALC源码
 ## 感谢[xzhih](https://github.com/xzhih/one-key-hidpi)的一键开启HIDPI
