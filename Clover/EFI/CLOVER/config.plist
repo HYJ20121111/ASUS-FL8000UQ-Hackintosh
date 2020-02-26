@@ -65,26 +65,6 @@
 					<key>Replace</key>
 					<data>RUNfXw==</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Name6D-03 to 00</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>Cm0KAw==</data>
-					<key>Replace</key>
-					<data>Cm0KAA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Name6D-04 to 00</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>Cm0KBA==</data>
-					<key>Replace</key>
-					<data>Cm0KAA==</data>
-				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -128,7 +108,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-alcbeta</string>
+		<string>-alcbeta -v</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>Debug</key>
