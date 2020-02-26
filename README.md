@@ -23,7 +23,7 @@
 8. 触控板
 9. 睡眠和唤醒
 ## 如果clover开机出现ACPI Error，请删除ACPI/patch下的DSDT.aml  
-一键开启HIDPI项目地址：[one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
+## 一键开启HIDPI项目地址：[one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
 ## 注意事项
 1.经多人测试，本机型最新版BIOS-309无法安装黑苹果，需要将BIOS降级到老版本: [BIOS降级教程](http://bbs.pcbeta.com/viewthread-1841246-1-1.html)  
 2.安装完成后请重新定制USB以解决无法睡眠问题：[USB定制教程](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)  
