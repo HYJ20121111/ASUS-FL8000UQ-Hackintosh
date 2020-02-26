@@ -597,7 +597,7 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>ROM</key>
-		<data>JQfbwe1o</data>
+		<data>ehUrDlf2</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -612,7 +612,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02916207J9JH4RJC</string>
+		<string>C02928404GUJH4RCB</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -644,16 +644,16 @@
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
 		<key>SerialNumber</key>
-		<string>C02YLSZRJHCD</string>
+		<string>C02Z20DWJHCD</string>
 		<key>SmUUID</key>
-		<string>E97F7045-18BF-4863-884C-1E6EACC1ED68</string>
+		<string>C8D25E34-AAFA-4621-B166-D0309F0E57F6</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>2AEB936C-AD26-44B8-B18E-88363494AA72</string>
+		<string>CC54EE0F-DDAE-4DE7-B5A6-6C02B58F6691</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
