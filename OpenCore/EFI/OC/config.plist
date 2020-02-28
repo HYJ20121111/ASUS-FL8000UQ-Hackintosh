@@ -72,14 +72,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SBUS</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-XCPM</string>
 				<key>Enabled</key>
 				<true/>
