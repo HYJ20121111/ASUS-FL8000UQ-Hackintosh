@@ -33,9 +33,10 @@
 ## 六、关于睡眠过程中电脑自动唤醒解决方案
 当电脑出现自动唤醒后，打开终端输入 log show --last 1d | grep "Wake reason" 找到唤醒电脑的设备，然后在DSDT中搜索对应的设备，将设备下面的_PRW方法注释掉即可。clover中的DSDT已注释GLAN和XDCI。
 ## 七、本机支持原生NVRAM，如果使用OpenCore引导，就可以可在偏好设置中使用“启动磁盘”来设置默认启动项。
-如何测试是否支持NVRAM:1.终端输入 sudo nvram 1212=1后重启；  
-                   2.重启后打开终端输入 nvram -p | grep 1212 ，如果输出1212 1，即NVRAM工作正常，否则不正常。  
-                   3.测试完后终端输入 sudo nvram -d 1212 来删除自定义变量
+如何测试是否支持NVRAM:  
+1.终端输入 sudo nvram 1212=1后重启；  
+2.重启后打开终端输入 nvram -p | grep 1212 ，如果输出1212 1，即NVRAM工作正常，否则不正常。  
+3.测试完后终端输入 sudo nvram -d 1212 来删除自定义变量
 ## 八、截图
 ![1.png](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/screenshot/1.png)  
 ![2.png](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/screenshot/2.png)  
