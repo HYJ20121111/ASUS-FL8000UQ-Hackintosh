@@ -16,6 +16,8 @@
 			<dict>
 				<key>AddPNLF</key>
 				<true/>
+				<key>FixHPET</key>
+				<false/>
 				<key>FixRTC</key>
 				<true/>
 				<key>FixRegions</key>
@@ -65,6 +67,18 @@
 					<key>Replace</key>
 					<data>RUNfXw==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>ALSD:_STA to XSTA(ACPI0008)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1NUQQ==</data>
+					<key>Replace</key>
+					<data>WFNUQQ==</data>
+					<key>TgtBridge</key>
+					<data>QUxTRA==</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -108,7 +122,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-alcbeta -v</string>
+		<string>-alcbeta</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>Debug</key>
@@ -199,6 +213,19 @@
 				<string>SATA controller</string>
 				<key>model</key>
 				<string>Sunrise Point-LP SATA Controller [AHCI mode]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
+				<data>QgAAAA==</data>
+				<key>model</key>
+				<string>Sunrise Point-LP HD Audio</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x0)</key>
 			<dict>
@@ -307,17 +334,23 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>AAPL,GfxYTile</key>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAbWQ==</data>
+				<data>CQAWWQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>device-id</key>
-				<data>G1kAAA==</data>
+				<data>FlkAAA==</data>
 				<key>device_type</key>
 				<string>3D Dispaly compatible controller</string>
 				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
+				<key>enable-hdmi-dividers-fix</key>
+				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con0-enable</key>
 				<data>AQAAAA==</data>
@@ -325,12 +358,20 @@
 				<data>EgAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con1-has-lspcon</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-pipe</key>
 				<data>EgAAAA==</data>
+				<key>framebuffer-con1-preferred-lspcon-mode</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-pipe</key>
 				<data>EgAAAA==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
@@ -577,7 +618,7 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>ROM</key>
-		<data>ehUrDlf2</data>
+		<data>ErJEwe1o</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -592,7 +633,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02928404GUJH4RCB</string>
+		<string>C02921303GUJH4R8C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -624,16 +665,16 @@
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
 		<key>SerialNumber</key>
-		<string>C02Z20DWJHCD</string>
+		<string>C02YRFZ1JHCD</string>
 		<key>SmUUID</key>
-		<string>C8D25E34-AAFA-4621-B166-D0309F0E57F6</string>
+		<string>86CB194B-00A5-4BD8-AFAF-665FFC92EF05</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>CC54EE0F-DDAE-4DE7-B5A6-6C02B58F6691</string>
+		<string>916AC68C-8160-4244-B3C1-72EA3E509315</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
