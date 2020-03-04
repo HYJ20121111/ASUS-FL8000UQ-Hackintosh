@@ -878,9 +878,9 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -1218,7 +1218,7 @@
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
-			<false/>
+			<true/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
 			<key>RequestBootVarFallback</key>
