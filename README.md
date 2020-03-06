@@ -6,7 +6,7 @@
 |--------------|-----------------------------|
 |    处理器     |          i7-8550U           |
 |     核显      |          UHD620             |  
-|     独显      |        940MX（已禁用）        |
+|     独显      |    GeForce 940MX（已屏蔽）    |
 |     内存      |  4G/4G 海力士DDR4 2400MHz    | 
 |     硬盘      |       120G SSD/1T HDD       | 
 |     声卡      |           ALC294            | 
@@ -27,7 +27,8 @@
 1.如果clover开机出现ACPI Error，请删除ACPI/patch下的DSDT.aml  
 2.经多人测试，本机型最新版BIOS-309无法安装黑苹果，需要将BIOS降级到老版本: [BIOS降级教程](http://bbs.pcbeta.com/viewthread-1841246-1-1.html)  
 3.安装完成后请使用Hackintool重新定制USB以解决睡眠问题：[USB定制教程](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)  
-4.进入睡眠需要一分钟左右的时间，再此期间屏幕黑屏无法唤醒，等彻底进入睡眠后即可唤醒。
+4.进入睡眠需要一分钟左右的时间，再此期间屏幕黑屏无法唤醒，等彻底进入睡眠后即可唤醒。  
+5.OpenCore关闭"Msic->ShowPicker"后可在开机过程中在ASUS标志出来后用alt键来显示启动菜单，笔记本自带键盘需要长按alt键，外接键盘需要不断点按alt键。
 ## 五、HDMI注意事项
 此电脑在BIOS中打开CSM兼容选项就可以在外接显示器中显示BIOS和Clover界面以及开机过程，但如果用外接显示器开机，那么黑苹果内屏将无法使用，但是10.14 Mojave中在clover里加上“igfxcflbklt=1”启动参数，开机后将笔记本盖子合上再打开即可同时使用内外屏，但注意，加上此启动参数后亮度调节将失效。此方法在10.15 Catalina中无效，所以建议10.15 Catalina不要打开CSM兼容模式，用内屏来开机，等黑苹果完全启动即可使用外屏。
 ## 六、关于睡眠过程中电脑自动唤醒解决方案
