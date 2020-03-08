@@ -213,7 +213,7 @@
 				<key>Comment</key>
 				<string>Generic: PCI root is a 0x1000 page memory region used by some firmwares</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 		</array>
 		<key>Quirks</key>
