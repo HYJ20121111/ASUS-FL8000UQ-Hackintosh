@@ -5,12 +5,12 @@
 |    配置       |        型号                 |
 |--------------|-----------------------------|
 |    处理器     |          i7-8550U           |
-|     核显      |          UHD620             |  
+|     核显      |          UHD620             |
 |     独显      |    GeForce 940MX（已屏蔽）    |
-|     内存      |  4G/4G 海力士DDR4 2400MHz    | 
-|     硬盘      |       120G SSD/1T HDD       | 
-|     声卡      |           ALC294            | 
-|   无线网卡     |        BCM94360CD四天线      | 
+|     内存      |  4G/4G 海力士DDR4 2400MHz    |
+|     硬盘      |       120G SSD/1T HDD       |
+|     声卡      |           ALC294            |
+|   无线网卡     |        BCM94360CD四天线      |
 
 ## 二、正常工作
 1. CPU变频
@@ -28,14 +28,14 @@
 |    按键   |        功能            |
 |----------|------------------------|
 |   F5     |    Brightness_down     |
-|   F6     |    Brightness_up       |  
+|   F6     |    Brightness_up       |
 |   F7     |    Scan Previous Track |
-|   F8     |    Play/Pause          | 
-|   F9     |    Scan Next Track     | 
-|   F10    |    Mute                | 
-|   F11    |    Volume_down         | 
+|   F8     |    Play/Pause          |
+|   F9     |    Scan Next Track     |
+|   F10    |    Mute                |
+|   F11    |    Volume_down         |
 |   F12    |    Volume_up           |
-  
+
 ## 五、注意事项
 1.如果clover开机出现ACPI Error，请删除ACPI/patch下的DSDT.aml  
 2.经多人测试，本机型最新版BIOS-309无法安装黑苹果，需要将BIOS降级到老版本: [BIOS降级教程](http://bbs.pcbeta.com/viewthread-1841246-1-1.html)  
@@ -54,4 +54,4 @@
 ## 九、截图
 ![1.png](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/screenshot/1.png)  
 ![2.png](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/screenshot/2.png)  
-![4.png](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/screenshot/4.png)
+![3.png](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/screenshot/3.png)
