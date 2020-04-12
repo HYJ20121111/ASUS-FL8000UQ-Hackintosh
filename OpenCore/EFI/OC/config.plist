@@ -16,11 +16,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-DMAC</string>
+				<string>SSDT-DGPU</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-DMAC.aml</string>
+				<string>SSDT-DGPU.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -40,38 +40,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-MCHC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-MCHC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-MEM2</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-MEM2.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-NDGP</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-NDGP.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PMCR</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PMCR.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-PNLF</string>
 				<key>Enabled</key>
 				<true/>
@@ -80,19 +48,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-SBUS</string>
+				<string>SSDT-PR00</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-XCPM</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-XCPM.aml</string>
+				<string>SSDT-PR00.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -221,30 +181,34 @@
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
-			<false/>
+			<true/>
 			<key>DisableSingleUser</key>
 			<false/>
 			<key>DisableVariableWrite</key>
 			<false/>
 			<key>DiscardHibernateMap</key>
-			<false/>
+			<true/>
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
 			<key>ForceExitBootServices</key>
 			<false/>
-			<key>ProtectCsmRegion</key>
+			<key>ProtectMemoryRegions</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
 			<true/>
+			<key>ProtectUefiServices</key>
+			<true/>
 			<key>ProvideCustomSlide</key>
 			<true/>
+			<key>RebuildAppleMemoryMap</key>
+			<false/>
 			<key>SetupVirtualMap</key>
 			<true/>
-			<key>ShrinkMemoryMap</key>
-			<false/>
 			<key>SignalAppleOS</key>
+			<false/>
+			<key>SyncRuntimePermissions</key>
 			<false/>
 		</dict>
 	</dict>
@@ -252,15 +216,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>Host bridge</string>
-				<key>model</key>
-				<string>Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -269,15 +224,6 @@
 				<string>USB controller</string>
 				<key>model</key>
 				<string>Intel Sunrise Point-LP USB 3.0 xHCI Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x2)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>Signal processing controller</string>
-				<key>model</key>
-				<string>Sunrise Point-LP Thermal subsystem</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x15,0x0)</key>
 			<dict>
@@ -315,24 +261,6 @@
 				<key>model</key>
 				<string>Sunrise Point-LP SATA Controller [AHCI mode]</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1c,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>Sunrise Point-LP PCI Express Root Port #1</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1c,0x4)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>Sunrise Point-LP PCI Express Root Port #5</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x4)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -342,15 +270,6 @@
 				<key>model</key>
 				<string>RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1c,0x5)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>Sunrise Point-LP PCI Express Root Port #6</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -359,33 +278,6 @@
 				<string>Network controller</string>
 				<key>model</key>
 				<string>BCM4360 802.11ac Wireless Network Adapter</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1e,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>Signal processing controller</string>
-				<key>model</key>
-				<string>Sunrise Point-LP Serial IO UART Controller #0</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1e,0x2)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>Signal processing controller</string>
-				<key>model</key>
-				<string>Sunrise Point-LP Serial IO SPI Controller #0</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>ISA bridge</string>
-				<key>model</key>
-				<string>Sunrise Point LPC Controller/eSPI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x2)</key>
 			<dict>
@@ -410,15 +302,6 @@
 				<integer>66</integer>
 				<key>model</key>
 				<string>Intel Sunrise Point-LP HD Audio</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x4)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>SMBus</string>
-				<key>model</key>
-				<string>Intel Sunrise Point-LP SMBus</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -456,15 +339,6 @@
 				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x4,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device_type</key>
-				<string>Signal processing controller</string>
-				<key>model</key>
-				<string>Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem</string>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -913,16 +787,18 @@
 		<dict>
 			<key>HibernateMode</key>
 			<string>None</string>
-			<key>PickerMode</key>
-			<string>External</string>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>HideSelf</key>
 			<true/>
+			<key>ConsoleAttributes</key>
+			<integer>0</integer>
 			<key>PickerAttributes</key>
 			<integer>0</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
+			<key>PickerMode</key>
+			<string>External</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -934,6 +810,8 @@
 		</dict>
 		<key>Debug</key>
 		<dict>
+			<key>AppleDebug</key>
+			<false/>
 			<key>DisableWatchDog</key>
 			<false/>
 			<key>DisplayDelay</key>
@@ -972,10 +850,10 @@
 			<integer>2</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
-			<key>Vault</key>
-			<string>Optional</string>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
+			<key>Vault</key>
+			<string>Optional</string>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -991,7 +869,7 @@
 				<key>Name</key>
 				<string>UEFI Shell</string>
 				<key>Path</key>
-				<string>Shell.efi</string>
+				<string>OpenShell.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1015,25 +893,23 @@
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
-				<key>UIScale</key>
-				<data>AQ==</data>
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
+				<key>UIScale</key>
+				<data>AQ==</data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>SystemAudioVolume</key>
+				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>Silde=1</string>
+				<string></string>
 				<key>bootercfg</key>
 				<string>log=0 debug=0 level=0</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
-				<key>nvda_drv</key>
-				<data>MQ==</data>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
-				<key>SystemAudioVolume</key>
-				<data>Rg==</data>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -1092,17 +968,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02834102GUJH4RJC</string>
+			<string>C02952500CDJH4R1M</string>
 			<key>ROM</key>
-			<data>lyMWJw+T</data>
+			<data>+G5GWSyZ</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02X8UYZJHCD</string>
+			<string>C02ZW5Y6JHCD</string>
 			<key>SystemUUID</key>
-			<string>E815DA70-8BB8-4F2E-84D3-BE9732270F93</string>
+			<string>50DD8D4B-E197-45B8-91F0-339509592C99</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1115,25 +991,16 @@
 	</dict>
 	<key>UEFI</key>
 	<dict>
-		<key>ConnectDrivers</key>
-		<true/>
-		<key>Drivers</key>
-		<array>
-			<string>HFSPlus.efi</string>
-			<string>ApfsDriverLoader.efi</string>
-			<string>FwRuntimeServices.efi</string>
-			<string>BootLiquor.efi</string>
-		</array>
 		<key>Audio</key>
 		<dict>
-			<key>AudioSupport</key>
-			<false/>
-			<key>AudioDevice</key>
-			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
 			<key>AudioCodec</key>
 			<integer>0</integer>
+			<key>AudioDevice</key>
+			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
 			<key>AudioOut</key>
 			<integer>0</integer>
+			<key>AudioSupport</key>
+			<false/>
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
@@ -1141,8 +1008,19 @@
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
+		<key>ConnectDrivers</key>
+		<true/>
+		<key>Drivers</key>
+		<array>
+			<string>HfsPlus.efi</string>
+			<string>ApfsDriverLoader.efi</string>
+			<string>OpenRuntime.efi</string>
+			<string>OpenCanopy.efi</string>
+		</array>
 		<key>Input</key>
 		<dict>
+			<key>KeyFiltering</key>
+			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
 			<key>KeyMergeThreshold</key>
@@ -1162,32 +1040,36 @@
 		</dict>
 		<key>Output</key>
 		<dict>
-			<key>TextRenderer</key>
-			<string>BuiltinGraphics</string>
+			<key>ClearScreenOnModeSwitch</key>
+			<false/>
 			<key>ConsoleMode</key>
 			<string></string>
-			<key>Resolution</key>
-			<string>1920x1080</string>
-			<key>ClearScreenOnModeSwitch</key>
+			<key>DirectGopCacheMode</key>
+			<string></string>
+			<key>DirectGopRendering</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
 			<true/>
-			<key>DirectGopRendering</key>
-			<false/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
 			<false/>
+			<key>Resolution</key>
+			<string>1920x1080</string>
 			<key>SanitiseClearScreen</key>
 			<true/>
+			<key>TextRenderer</key>
+			<string>BuiltinGraphics</string>
 		</dict>
 		<key>Protocols</key>
 		<dict>
 			<key>AppleAudio</key>
 			<false/>
 			<key>AppleBootPolicy</key>
+			<false/>
+			<key>AppleDebugLog</key>
 			<false/>
 			<key>AppleEvent</key>
 			<false/>
