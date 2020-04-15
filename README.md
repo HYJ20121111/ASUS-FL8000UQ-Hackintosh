@@ -34,7 +34,7 @@
 |   F9     |    Scan Next Track     |
 |   F10    |    Mute                |
 |   F11    |    Volume_down         |
-|   F12    |    Volume_up           |
+|   F12    |    Volume_up           |  
 如果需要用到这些按键原本的功能的话，可以删除ACPI文件下的SSDT-Fkey.aml,然后使用Karabiner Elements来进行键位调整，这样就能在使用原本功能的同时也支持Mac的功能。
 ## 五、注意事项
 1.Clover以后不再更新，仅支持到macOS Catalina 10.15.3，如有需要，自行更新Clover。10.15.3之后的版本请使用OpenCore。  
