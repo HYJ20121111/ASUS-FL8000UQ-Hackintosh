@@ -946,7 +946,7 @@
 			</array>
 		</dict>
 		<key>WriteFlash</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -957,17 +957,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02732108CDHWVPCB</string>
+			<string>C02901100J9JH4RFB</string>
 			<key>ROM</key>
-			<data>Kp/GvxUq</data>
+			<data>AYMczbQi</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>MacBookPro14,1</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02V6BZLHV29</string>
+			<string>C02Y23YBJHCD</string>
 			<key>SystemUUID</key>
-			<string>0814E000-60FA-448B-AFF6-79CB38BF152A</string>
+			<string>D8C5962F-4468-4BA1-90C2-4A7410CDB422</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
