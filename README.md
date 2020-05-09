@@ -43,7 +43,7 @@
 ## 五、注意事项
 1.Clover以后不再更新，仅支持到macOS Catalina 10.15.3，如有需要，自行更新Clover。10.15.3之后的版本请使用OpenCore。  
 2.如果clover开机出现ACPI Error，请删除ACPI/patch下的DSDT.aml  
-3.经多人测试，本机型最新版BIOS-309无法安装黑苹果，需要将BIOS降级到老版本: [BIOS降级教程](http://bbs.pcbeta.com/viewthread-1841246-1-1.html)  
+3.BIOS309无法安装的问题已经修复，不需要再再win10里面禁用更新不包括驱动程序了。  
 4.安装完成后请使用Hackintool重新定制USB以解决睡眠问题：[USB定制教程](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)   
 5.OpenCore关闭"Msic->ShowPicker"后可在开机过程中在ASUS标志出来后用alt键来显示启动菜单，笔记本自带键盘需要长按alt键，外接键盘需要不断点按alt键。  
 6.Windows+Mac双系统推荐使用NDK-OpenCore，对windows没有影响。原版OpenCore可能导致windows激活信息丢失。
