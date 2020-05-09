@@ -42,16 +42,15 @@
 如果需要用到这些按键原本的功能的话，可以删除ACPI文件下的SSDT-Fkey.aml,然后使用Karabiner Elements来进行键位调整，这样就能在使用原本功能的同时也支持Mac的功能。
 ## 五、注意事项
 1.Clover以后不再更新，仅支持到macOS Catalina 10.15.3，如有需要，自行更新Clover。10.15.3之后的版本请使用OpenCore。  
-2.如果clover开机出现ACPI Error，请删除ACPI/patch下的DSDT.aml  
-3.BIOS309无法安装的问题已经修复，不需要再再win10里面禁用更新不包括驱动程序了。  
-4.安装完成后请使用Hackintool重新定制USB以解决睡眠问题：[USB定制教程](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)   
-5.OpenCore关闭"Msic->ShowPicker"后可在开机过程中在ASUS标志出来后用alt键来显示启动菜单，笔记本自带键盘需要长按alt键，外接键盘需要不断点按alt键。  
-6.Windows+Mac双系统推荐使用NDK-OpenCore，对windows没有影响。原版OpenCore可能导致windows激活信息丢失。
+2.BIOS309无法安装的问题已经修复，不需要再再win10里面禁用更新不包括驱动程序了。  
+3.安装完成后请使用Hackintool重新定制USB以解决睡眠问题：[USB定制教程](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)   
+4.OpenCore关闭"Msic->ShowPicker"后可在开机过程中在ASUS标志出来后用alt键来显示启动菜单，笔记本自带键盘需要长按alt键，外接键盘需要不断点按alt键。  
+5.Windows+Mac双系统推荐使用NDK-OpenCore，对windows没有影响。原版OpenCore可能导致windows激活信息丢失。
 
 ## 六、HDMI注意事项
 此电脑在BIOS中打开CSM兼容选项就可以在外接显示器中显示BIOS和Clover界面以及开机过程，但如果用外接显示器开机，那么黑苹果内屏将无法使用，但是10.14 Mojave中在clover里加上“igfxcflbklt=1”启动参数，开机后将笔记本盖子合上再打开即可同时使用内外屏，但注意，加上此启动参数后亮度调节将失效。此方法在10.15 Catalina中无效，所以建议10.15 Catalina不要打开CSM兼容模式，用内屏来开机，等黑苹果完全启动即可使用外屏。
 ## 七、关于睡眠过程中电脑自动唤醒解决方案
-当电脑出现自动唤醒后，打开终端输入 log show --last 1d | grep "Wake reason" 找到唤醒电脑的设备，然后在DSDT中搜索对应的设备，将设备下面的_PRW方法注释掉即可。clover中的DSDT已注释GLAN和XDCI。OpenCore暂未出现此问题。
+当电脑出现自动唤醒后，打开终端输入 log show --last 1d | grep "Wake reason" 找到唤醒电脑的设备，然后在DSDT中搜索对应的设备，将设备下面的_PRW方法注释掉即可。
 ## 八、本机NVRAM在Mac下可以正常使用，不需要再模拟NVRAM。如果使用OpenCore引导，就可以可在偏好设置中使用“启动磁盘”来设置默认启动项。
 如何测试是否支持NVRAM:  
 1.终端输入  sudo nvram 1212=1  后重启；  
