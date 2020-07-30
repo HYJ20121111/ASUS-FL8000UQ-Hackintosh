@@ -14,12 +14,12 @@
 
 关于拆机卡BCM943602CS和BCM943602CDP导致在关机状态下拔插电源适配器电脑自动开机的情况，需要屏蔽拆机卡的第13针脚，也就是无线网络唤醒功能的针脚，屏蔽后即可解决此问题，入手需谨慎。强烈推荐DW1820A-08PKF4版本，无需屏蔽针脚，稳定运行。
 
-![4.png](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/blob/master/screenshot/4.png)
+![4.png](https://github.com/KKKIIINNN/ASUS-FL8000UQ-Hackintosh/bl官方ob/master/screenshot/4.png)
 
 ## 二、正常工作
 1. CPU变频
 2. 核显硬件加速，独显无法驱动已做屏蔽
-3. 声卡输出（自编译AppleALC驱动）
+3. 声卡输出（~~自编译AppleALC驱动~~  已合并至AppleALC官方项目，LayoutID=66）
 4. HDMI输出
 5. USB
 6. WIFI/蓝牙(已更换DW1820A,原装AR9565可驱动,有需要可去远景论坛查找）
