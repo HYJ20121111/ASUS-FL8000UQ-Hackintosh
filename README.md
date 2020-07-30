@@ -7,7 +7,7 @@
 |    处理器     |          i7-8550U           |
 |     核显      |    Intel Graphics UHD620    |
 |     独显      |    GeForce 940MX（已屏蔽）    |
-|     内存      |  4G/4G 海力士DDR4 2400MHz    |
+|     内存      |     4G×2 DDR4 2400MHz       |
 |     硬盘      |       120G SSD/1T HDD       |
 |     声卡      |           ALC294            |
 |   无线网卡     |        DW1820A-08PKF4      |
